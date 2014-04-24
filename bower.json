@@ -1,0 +1,8 @@
+{
+	"name": "nohowebdive",
+	"dependencies": {
+		"jquery": "jquery/jquery",
+		"modernizr": "Modernizr/Modernizr",
+		"fittext": "davatron5000/FitText.js"
+	}
+}
