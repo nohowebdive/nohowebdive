@@ -16,6 +16,15 @@ module.exports = function(grunt) {
       }
     },
 
+    copy: {
+      scripts: {
+        expand: true,
+        cwd: 'components/jquery/dist/',
+        src: 'jquery.min.js',
+        dest: 'js'
+      }
+    },
+
     uglify: {
       dist: {
         files: {
@@ -52,6 +61,6 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   grunt.registerTask('build', ['sass']);
-  grunt.registerTask('default', ['uglify', 'concat', 'watch']);
+  grunt.registerTask('default', ['copy', 'uglify', 'concat', 'watch']);
 
 }
