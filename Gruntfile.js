@@ -40,7 +40,7 @@ module.exports = function(grunt) {
       },
       dist: {
         src: [
-          'js/fittext/jquery.fittext.min.js'
+          'js/jquery.fittext.min.js'
         ],
 
         dest: 'js/app.js',
