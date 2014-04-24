@@ -1,0 +1,80 @@
+header {
+	@include background(
+		linear-gradient(#81baf8,#fffde0)
+	);
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+hgroup h1 {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+#webdive {
+	width: 100%;
+}
+
+header h2 {
+	font-weight: 300;
+	text-align: center;
+	margin-top: 0;
+	font-size: 1.2em;
+	line-height: 1.3em;
+	color: #d37f11;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	@media screen and (min-width:40em) {
+		font-size: 1.3em;
+		line-height: 1.3em;
+	}
+}
+
+.banner-noho {
+	display: block;
+	margin: 0 auto;
+	color: #364c80;
+	font: {
+		family: $cursive;
+		weight: 600; 
+		size: 0.9em;
+	}
+	line-height: 140%;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	@media screen and (min-width:40em) {
+		color: #f5f2b0;
+		.no-js {
+			font-size: 1.5em;
+		}
+	}
+}
+.banner-webdive {
+	display: block;
+	margin: 0 auto;
+	clear: left;
+	font: {
+		family: $block;
+		weight: 400;
+		size: 2em;
+	}
+	color: #681e18;
+	text-transform: uppercase;
+	i {
+		@for $i from 1 through 7 {
+		    &:nth-child(#{$i}) {
+			    color: lighten(#681e18, (1% * ($i - 1)));
+			}
+		}
+	}
+	@media screen and (min-width:40em) {
+		.no-js {
+			font-size: 3.3em;
+		}
+	}
+
+}
+
+.wave-top {
+	background: url(../img/wave.png) 0 0 repeat-x;
+	overflow: hidden;
+}

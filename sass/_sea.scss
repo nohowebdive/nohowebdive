@@ -1,0 +1,98 @@
+@import "chowder";
+
+.the-deep {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	@include background-image(
+		linear-gradient(transparent, #1c1342),
+		url(../img/ripples.png),
+		linear-gradient(#364c80 5%, #282b59, #1c1342 95%)
+	);
+}
+
+.bubble1 {
+	@include bubble(5em);
+	float: right;
+	margin-top: 2em;
+	margin-right: 20%;
+}
+
+.after-work {
+	position: relative;
+	@include bubble(15em);
+	@include abouts(#8bb660);
+	margin-left: 15%;
+	clear: right;
+}
+
+.bubble2 {
+	@include bubble(2.2em);
+	clear: left;
+	margin-left: 15%;
+	
+}
+
+.after-dark {
+	@include bubble(15em);
+	@include abouts(#ee8b21);
+	margin-right: 15%;
+	float: right;
+	clear: left;
+}
+
+.bubble3 {
+	@include bubble(3.5em);
+	margin-right: 10%;
+	float: right;
+	clear: right;
+}
+
+.surfaces {
+	clear: right;
+	text-align: center;
+	padding: 1em;
+	p {
+		$color: #3c38a9;
+		color: $color;
+		line-height: 1.2em;
+	}
+}
+
+.social-links {
+	clear: left;
+	height: 11em;
+	width: 20em;
+	margin: 0 auto;
+	position: relative;
+}
+
+.twitter, .facebook, .email {
+	clear: left;
+	a {
+		text-decoration: none;
+	}
+	position: absolute;
+}
+.twitter {
+	@include bubble(5em);
+	top: .2em;
+	left: 1em;
+}
+.facebook {
+	@include bubble(5em);
+	top: 1.7em;
+	right: 2em;
+}
+.email {
+	@include bubble(5em);
+	top: 6em;
+	left: 6em;
+}
+
+.bubble4 {
+	@include bubble(2.6em);
+	clear: left;
+	margin-left: 17%;
+}

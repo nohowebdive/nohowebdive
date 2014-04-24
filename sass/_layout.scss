@@ -1,0 +1,19 @@
+hgroup, article, .footer-info {
+	max-width: 100%;
+	margin: auto;
+	padding: 0 0.5em;
+	@media screen and (min-width:40em) {
+		max-width: 40em;
+		margin: 0 auto;
+	}
+}
+
+.picker {
+	color: #8097e2;
+}
+
+@import "sky";
+
+@import "sea";
+
+@import "sand";

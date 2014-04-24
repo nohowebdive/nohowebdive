@@ -1,0 +1,29 @@
+@import "noise";
+
+.page-footer {
+	background: url($noise) #645933;
+}
+
+.sand {
+	text-align: center;
+	background: url(../img/sand.png) left top repeat-x;
+	overflow: hidden;
+	padding-top: 2em;
+	p {
+		color: darken(#645933,10%);
+		font-size: 1em;
+		
+		@media screen and (min-width:40em) {
+			font-size: 1.4em;
+		}
+	}
+}
+.footloose {
+    @media screen and (min-width:40em) {
+	    display: none;
+    }
+}	
+.star {
+	display: block;
+	width: 2em;
+}

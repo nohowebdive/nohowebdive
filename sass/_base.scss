@@ -1,0 +1,17 @@
+/* Base layout and style variables */
+
+@import "compass/css3";
+@import "compass/typography/lists";
+@import "sand";
+
+* {
+	box-sizing: border-box;
+}
+
+.picker {
+	color: #1c1342;
+}
+
+body {
+	background: url($noise) #645933;
+}
