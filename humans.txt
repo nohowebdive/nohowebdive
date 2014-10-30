@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Matthew Wimmer -- Designer & Developer -- @donmateo
+
+# THANKS
+
+    All the brilliant, interesting people who come to the meetup.
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Sass
+    JavaScript, jQuery
